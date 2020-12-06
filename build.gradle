@@ -10,13 +10,14 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.kohsuke', name: 'github-api', version: '1.117'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.7.0'
 }
 
 test {
     useJUnitPlatform()
 }
-
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 compileJava.options.encoding("UTF-8")
 tasks.withType(JavaCompile) {
     options.encoding("UTF-8")
