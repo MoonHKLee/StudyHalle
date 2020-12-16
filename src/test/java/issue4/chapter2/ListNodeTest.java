@@ -24,40 +24,40 @@ class ListNodeTest {
         @Test
         @DisplayName("ADD_FIRST")
         void addFirst() {
-            list.add(list,new ListNode(10),0);
+            list.add(list, new ListNode(10), 0);
 
-            assertEquals(10,list.getPositionNumber(list,0));
-            assertEquals(1,list.getPositionNumber(list,1));
-            assertEquals(2,list.getPositionNumber(list,2));
-            assertEquals(3,list.getPositionNumber(list,3));
+            assertEquals(10, list.getPositionNumber(list, 0));
+            assertEquals(1, list.getPositionNumber(list, 1));
+            assertEquals(2, list.getPositionNumber(list, 2));
+            assertEquals(3, list.getPositionNumber(list, 3));
 
-            assertEquals(4,list.size());
+            assertEquals(4, list.size());
         }
 
         @Test
         @DisplayName("ADD_MIDDLE")
         void addMiddle() {
-            list.add(list,new ListNode(10),1);
+            list.add(list, new ListNode(10), 1);
 
-            assertEquals(1,list.getPositionNumber(list,0));
-            assertEquals(10,list.getPositionNumber(list,1));
-            assertEquals(2,list.getPositionNumber(list,2));
-            assertEquals(3,list.getPositionNumber(list,3));
+            assertEquals(1, list.getPositionNumber(list, 0));
+            assertEquals(10, list.getPositionNumber(list, 1));
+            assertEquals(2, list.getPositionNumber(list, 2));
+            assertEquals(3, list.getPositionNumber(list, 3));
 
-            assertEquals(4,list.size());
+            assertEquals(4, list.size());
         }
 
         @Test
         @DisplayName("ADD_LAST")
         void addLast() {
-            list.add(list,new ListNode(10),3);
+            list.add(list, new ListNode(10), 3);
 
-            assertEquals(1,list.getPositionNumber(list,0));
-            assertEquals(2,list.getPositionNumber(list,1));
-            assertEquals(3,list.getPositionNumber(list,2));
-            assertEquals(10,list.getPositionNumber(list,3));
+            assertEquals(1, list.getPositionNumber(list, 0));
+            assertEquals(2, list.getPositionNumber(list, 1));
+            assertEquals(3, list.getPositionNumber(list, 2));
+            assertEquals(10, list.getPositionNumber(list, 3));
 
-            assertEquals(4,list.size());
+            assertEquals(4, list.size());
         }
     }
 
@@ -75,34 +75,34 @@ class ListNodeTest {
         @Test
         @DisplayName("REMOVE_FIRST")
         void test_add_first() {
-            list.remove(list,0);
+            list.remove(list, 0);
 
-            assertEquals(2,list.getPositionNumber(list,0));
-            assertEquals(3,list.getPositionNumber(list,1));
+            assertEquals(2, list.getPositionNumber(list, 0));
+            assertEquals(3, list.getPositionNumber(list, 1));
 
-            assertEquals(2,list.size());
+            assertEquals(2, list.size());
         }
 
         @Test
         @DisplayName("REMOVE_MIDDLE")
         void test_add_middle() {
-            list.remove(list,1);
+            list.remove(list, 1);
 
-            assertEquals(1,list.getPositionNumber(list,0));
-            assertEquals(3,list.getPositionNumber(list,1));
+            assertEquals(1, list.getPositionNumber(list, 0));
+            assertEquals(3, list.getPositionNumber(list, 1));
 
-            assertEquals(2,list.size());
+            assertEquals(2, list.size());
         }
 
         @Test
         @DisplayName("REMOVE_LAST")
         void test_add_last() {
-            list.remove(list,2);
+            list.remove(list, 2);
 
-            assertEquals(1,list.getPositionNumber(list,0));
-            assertEquals(2,list.getPositionNumber(list,1));
+            assertEquals(1, list.getPositionNumber(list, 0));
+            assertEquals(2, list.getPositionNumber(list, 1));
 
-            assertEquals(2,list.size());
+            assertEquals(2, list.size());
         }
     }
 

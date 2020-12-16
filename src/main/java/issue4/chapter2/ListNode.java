@@ -8,18 +8,17 @@ public class ListNode {
 
     ListNode top;
 
-    ListNode tail;
-
     public ListNode() {
 
     }
+
     public ListNode(int number) {
         this.number = number;
     }
 
     public ListNode add(ListNode head, ListNode nodeToAdd, int position) {
         top = head;
-        for (int i = 0; i < position ; i++) {
+        for (int i = 0; i < position; i++) {
             top = top.node;
         }
         if (top.node != null) {
@@ -32,7 +31,7 @@ public class ListNode {
     public int getPositionNumber(ListNode head, int position) {
         top = head;
         top = top.node;
-        for (int i = 0; i < position ; i++) {
+        for (int i = 0; i < position; i++) {
             top = top.node;
         }
         return top.number;
@@ -40,13 +39,13 @@ public class ListNode {
 
     public ListNode remove(ListNode head, int positionToRemove) {
         top = head;
-        ListNode remove = null;
+        ListNode remove;
         for (int i = 0; i < positionToRemove; i++) {
             top = top.node;
         }
         if (top.node.node == null) {
             remove = top.node;
-            top.node=null;
+            top.node = null;
         } else {
             remove = top.node;
             top.node = top.node.node;
@@ -57,8 +56,8 @@ public class ListNode {
     public boolean contains(ListNode head, ListNode nodeToCheck) {
         top = head;
         top = top.node;
-        while (top!=null) {
-            if(top.number == nodeToCheck.number) {
+        while (top != null) {
+            if (top.number == nodeToCheck.number) {
                 return true;
             }
             top = top.node;
@@ -70,7 +69,7 @@ public class ListNode {
         int count = 0;
         ListNode top = this;
         top = top.node;
-        while (top!=null) {
+        while (top != null) {
             top = top.node;
             count++;
         }

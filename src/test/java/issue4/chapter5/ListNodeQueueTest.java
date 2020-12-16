@@ -5,12 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class ArrayQueueTest {
-    ArrayQueue queue;
+class ListNodeQueueTest {
+
+    ListNodeQueue queue;
 
     @BeforeEach
     void init() {
-        queue = new ArrayQueue();
+        queue = new ListNodeQueue();
         queue.offer(1);
         queue.offer(3);
         queue.offer(2);

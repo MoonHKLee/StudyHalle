@@ -1,6 +1,7 @@
 package issue4.chapter5;
 
 public class ArrayQueue {
+
     int[] arr;
     private int capacity;
     private int size;
